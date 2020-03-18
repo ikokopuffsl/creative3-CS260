@@ -2,7 +2,7 @@
   <div id="app">
     <div id="menu">
       <div id="brand">
-        <router-link to="/">Home</router-link>
+        <router-link to="/"> <img src="../images/logo.png"/></router-link>
       </div>
       <div id="side">
         <div class="menu-item browse">
@@ -17,7 +17,6 @@
 
         <router-link to="/cart">
           <div class="menu-item">
-            <img src="/images/love.png" />
             <p>{{ numberOfItems }} Items</p>
           </div>
         </router-link>
@@ -76,9 +75,11 @@ body {
 }
 
 #side {
+  font-size: 30px;
   grid-area: side;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  font-family: "Bangers", cursive;
 }
 #side img {
   width: 50px;
