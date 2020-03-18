@@ -1,39 +1,72 @@
-<template>
+<!--<template>
   <div>
     <h1>Brroowwnniieess</h1>
     <div class="container-fluid">
       <div class="row">
         <div class="col item">
-          <img src="../../images/cheese_cake_brownies.jpg" />
+          <img src="../../images/products/cheese_cake_brownies.jpg" />
           <p>Cheese Cake Brownies</p>
         </div>
         <div class="col item">
-          <img src="../../images/Cookies-and-Cream-Oreo-Brownies4.jpg" />
+          <img src="../../images/products/Cookies-and-Cream-Oreo-Brownies4.jpg" />
           <p>Cookies&Cream Brownies</p>
         </div>
         <div class="col item">
-          <img src="../../images/fudge_brownies.jpeg" />
+          <img src="../../images/products/fudge_brownies.jpeg" />
           <p>Fudge Brownies</p>
         </div>
       </div>
       <div class="row">
         <div class="col item">
-          <img src="../../images/keto_fudge_brownies.jpeg" />
+          <img src="../../images/products/keto_fudge_brownies.jpeg" />
           <p>Keto Fudge Brownies</p>
         </div>
         <div class="col item">
-          <img src="../../images/nutty_caramel_brownie.jpeg" />
+          <img src="../../images/products/nutty_caramel_brownie.jpeg" />
           <p>Nutty Caramel Brownies</p>
         </div>
         <div class="col item">
-          <img src="../../images/vegan_cheesecake.jpeg" />
+          <img src="../../images/products/vegan_cheesecake.jpeg" />
           <p>Vegan Cheesecake Brownies</p>
         </div>
       </div>
     </div>
   </div>
 </template>
+-->
+<template>
+  <div>
+    <h1>Brroowwnniieess</h1>
+    <div class="container-fluid text-size">
+      <BakeryList :products="products" />
+    </div>
+  </div>
+</template>
 
+<script>
+import BakeryList from "../components/BakeryList.vue"
+export default {
+  name: 'Brownies',
+  components: {
+    BakeryList
+  },
+  data() {
+    return {
+      country: '',
+    }
+  },
+  computed: {
+    products() {
+      return this.$root.$data.products[1];
+    }
+  },
+  methods: {
+    select(country) {
+      this.country = country;
+    }
+  }
+}
+</script>
 <style scoped>
 h1 {
   border: 2px solid #f18904;

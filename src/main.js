@@ -3,11 +3,12 @@ import App from "./App.vue";
 import router from "./router";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import mockc from './mock-cookies.js'
+import mockb from './mock-brownies.js'
 Vue.config.productionTip = false;
 
-const cookies = ["hellow", "world"];
 let data = {
-  products: cookies,
+  products: [mockc, mockb],
   cart: []
 };
 

@@ -1,39 +1,74 @@
-<template>
+<!--<template>
   <div>
     <h1>Coooooooookkkiiieeeesss</h1>
     <div class="container-fluid text-size">
       <div class="row">
         <div class="col item">
-          <img src="../../images/chocoloate_chip_cookie.jpg" />
+          <img src="../../images/products/chocoloate_chip_cookie.jpg" />
           <p>Chocolate Chip Cookies</p>
         </div>
         <div class="col item">
-          <img src="../../images/gingerbread_cookies.jpeg" />
+          <img src="../../images/products/gingerbread_cookies.jpeg" />
           <p>Gingerbread Cookies</p>
         </div>
         <div class="col item">
-          <img src="../../images/mm_cookies.jpeg" />
+          <img src="../../images/products/mm_cookies.jpeg" />
           <p>M&M Cookies</p>
         </div>
       </div>
       <div class="row">
         <div class="col item">
-          <img src="../../images/smores_cookies.jpeg" />
+          <img src="../../images/products/smores_cookies.jpeg" />
           <p>S'mores Cookies</p>
         </div>
         <div class="col item">
-          <img src="../../images/twix_cookies.jpeg" />
+          <img src="../../images/products/twix_cookies.jpeg" />
           <p>Twix Cookies</p>
         </div>
         <div class="col item">
-          <img src="../../images/ultra_gooey_choco_chips.jpeg" />
+          <img src="../../images/products/ultra_gooey_choco_chips.jpeg" />
           <p>Ultra Gooey Chocolate Chip Cookies</p>
         </div>
       </div>
+      <BakeryList :products="products" />
+    </div>
+  </div>
+</template>
+-->
+
+<template>
+  <div>
+    <h1>Coooooooookkkiiieeeesss</h1>
+    <div class="container-fluid text-size">
+      <BakeryList :products="products" />
     </div>
   </div>
 </template>
 
+<script>
+import BakeryList from "../components/BakeryList.vue"
+export default {
+  name: 'Cookies',
+  components: {
+    BakeryList
+  },
+  data() {
+    return {
+      country: '',
+    }
+  },
+  computed: {
+    products() {
+      return this.$root.$data.products[0];
+    }
+  },
+  methods: {
+    select(country) {
+      this.country = country;
+    }
+  }
+}
+</script>
 <style scoped>
 h1 {
   border: 2px solid #f18904;

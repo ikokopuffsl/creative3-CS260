@@ -36,7 +36,20 @@ export default {
   },
   computed: {
     numberOfItems() {
-      return this.$root.$data.cart.length || "No";
+      debugger
+      return this.$root.$data.cart.length; 
+      /*var vals = this.$root.$data.cart.values();
+      debugger
+      let value, done, sum = 0;
+      do {
+        ({value, done} = vals.next());
+
+        sum += value || 0;
+
+      } while(!done)
+    debugger
+    return sum;
+    //return 5;*/
     }
   }
 };
