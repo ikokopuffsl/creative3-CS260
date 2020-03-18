@@ -1,5 +1,5 @@
 <template>
-        <div class="container">
+        <div>
           <h1>About our Bakery!</h1>
             <div class="row">
                 <div class="col item-text">
