@@ -46,31 +46,120 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #F49F05; */
 }
-.search {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 50%;
-}
-form {
-  display: table;
-  width: 100%;
-}
-i {
-  display: table-cell;
-  padding-left: 10px;
-  width: 1px;
-}
-input {
-  display: table-cell;
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+  font-family: "Bangers", cursive;
   font-size: 20px;
-  border: none !important;
-  box-shadow: none !important;
-  width: 100%;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #f18904;
+}
+
+.active {
+  background-color: #36688d;
+}
+
+#css2 {
+  font-size: 20px;
+}
+
+#logo {
   height: 40px;
+  width: 40px;
+}
+
+.navbar-brand {
+  font-family: "Bangers", cursive;
+}
+
+h1 {
+  border: 2px solid #f18904;
+  padding: 10px;
+  color: white;
+  background-color: #f49f05;
+  font-family: "Bangers", cursive;
+  text-align: center;
+}
+
+p {
+  color: #233c67;
+  margin: 20px;
+  font-size: 20px;
+  font-family: "Bangers", cursive;
+}
+div > p {
+  font-size: 35px;
+}
+.grey-background {
+  background-color: grey;
+}
+
+#text-center {
+  text-align: center;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.item {
+  border: 2px solid #f18904;
+  text-align: center;
+  margin: 20px;
+}
+.item-text {
+  border: 2px solid #f18904;
+  text-align: center;
+  padding: 10px;
+  font-family: "Bangers", cursive;
+}
+.about-text {
+  font-size: 20px;
+}
+
+img {
+  height: 400px;
+  width: 100%;
+  border-bottom: 2px solid #f18904;
+}
+
+.col {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+footer {
+  border: 2px solid #f18904;
+  padding: 10px;
+  color: white;
+  background-color: #f49f05;
+  font-family: "Bangers", cursive;
+  text-align: center;
 }
 </style>
