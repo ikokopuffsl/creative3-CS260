@@ -1,5 +1,5 @@
 <template>
   <div>
-    Hello Home
+    Hello Cart
   </div>
 </template>
