@@ -2,7 +2,7 @@
   <div id="app">
     <div id="menu">
       <div id="brand">
-        <router-link to="/"> <img src="../images/logo.png"/></router-link>
+        <router-link to="/"> <img src="/images/logo.png"/></router-link>
       </div>
       <div id="side">
         <div class="menu-item browse">
@@ -36,7 +36,7 @@ export default {
   },
   computed: {
     numberOfItems() {
-      debugger
+
       return this.$root.$data.cart.length; 
       /*var vals = this.$root.$data.cart.values();
       debugger

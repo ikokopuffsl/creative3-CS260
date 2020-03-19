@@ -7,7 +7,7 @@
         <p>In Stock: {{product.inStock}}</p>
       </div>
       <div class="image">
-        <img :src="'../../images/products/'+ product.image">
+        <img :src="'/images/products/'+product.image">
       </div>
       <div class="price">
         <h2>{{product.price}}</h2>
@@ -26,9 +26,9 @@ export default {
   },
 methods: {
     addToCart(product) {  
-      debugger
       if(product.inStock){
         this.$root.$data.cart.push(product);
+        console.log(product.image)
       }
       /*if (!this.$root.$data.cart.has(product)){
         debugger

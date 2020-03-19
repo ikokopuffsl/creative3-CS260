@@ -11,7 +11,11 @@
 <script>
 export default {
   name: "Footer",
-
+  data() {
+    return {
+      msg: 'Your comment here',
+    }
+  },
   methods:{
     submitRequest(){
       debugger

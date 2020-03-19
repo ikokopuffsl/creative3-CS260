@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Welcome to The Little Bakery</h1>
-    <img src="../../images/bakery2.jpg"/>
+    <img src="/images/bakery2.jpg"/>
   </div>
 </template>
 
