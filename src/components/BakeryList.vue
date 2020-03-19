@@ -4,7 +4,7 @@
     <div class="product" v-for="product in products" :key="product.id">
       <div class="info">
         <h1>{{product.name}}</h1>
-        <p>{{product.country}}</p>
+        <p>In Stock: {{product.inStock}}</p>
       </div>
       <div class="image">
         <img :src="'../../images/products/'+ product.image">
@@ -27,7 +27,9 @@ export default {
 methods: {
     addToCart(product) {  
       debugger
-      this.$root.$data.cart.push(product);
+      if(product.inStock){
+        this.$root.$data.cart.push(product);
+      }
       /*if (!this.$root.$data.cart.has(product)){
         debugger
         this.$root.$data.cart = this.$root.$data.cart.set(product,1);

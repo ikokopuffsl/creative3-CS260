@@ -1,12 +1,25 @@
 <template>
   <footer>
     <a href="https://github.com/ikokopuffsl/creative3-CS260">Github</a>
+    <br>
+    <span>Do you have any requests or comments for us?</span>
+    <input type="text" v-model="msg" id="comments">
+    <button @click="submitRequest()" class="auto">Submit!</button>
   </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
+
+  methods:{
+    submitRequest(){
+      debugger
+      //To be fleshed out in next lab
+      document.getElementById('comments').value = ''
+      
+    }
+  },
 };
 </script>
 

@@ -5,7 +5,6 @@
     <div class="product" v-for="product in this.$root.$data.cart" :key="product.id">
       <div class="info">
         <h1>{{product.name}}</h1>
-        <p>{{product.country}}</p>
       </div>
       <div class="image">
         <img :src="'/images/products/'+product.image">
@@ -37,7 +36,7 @@ methods: {
       else{
         this.$root.$data.cart.delete(product[0]);
       }*/
-    }
+    },
   }
 }
 </script>
