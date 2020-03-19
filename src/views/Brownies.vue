@@ -44,28 +44,23 @@
 </template>
 
 <script>
-import BakeryList from "../components/BakeryList.vue"
+import BakeryList from "../components/BakeryList.vue";
 export default {
-  name: 'Brownies',
+  name: "Brownies",
   components: {
     BakeryList
   },
-  data() {
-    return {
-      country: '',
-    }
-  },
+  // data() {
+  //   return {
+  //     country: '',
+  //   }
+  // },
   computed: {
     products() {
       return this.$root.$data.products[1];
     }
-  },
-  methods: {
-    select(country) {
-      this.country = country;
-    }
   }
-}
+};
 </script>
 <style scoped>
 h1 {
