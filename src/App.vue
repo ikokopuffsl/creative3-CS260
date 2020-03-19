@@ -1,6 +1,11 @@
 <template>
   <div id="app">
     <div id="menu">
+      <div id="left-side">
+        <div class="menu-item browse">
+          <router-link to="/login">Login</router-link>
+        </div>
+      </div>
       <div id="brand">
         <router-link to="/"> <img src="/images/logo.png"/></router-link>
       </div>
@@ -36,8 +41,7 @@ export default {
   },
   computed: {
     numberOfItems() {
-
-      return this.$root.$data.cart.length; 
+      return this.$root.$data.cart.length;
       /*var vals = this.$root.$data.cart.values();
       debugger
       let value, done, sum = 0;
@@ -87,6 +91,12 @@ body {
   height: 200px;
 }
 
+#left-side {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Bangers", cursive;
+}
 #side {
   font-size: 30px;
   grid-area: side;

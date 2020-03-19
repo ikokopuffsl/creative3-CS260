@@ -5,6 +5,7 @@ import Brownies from "../views/Brownies.vue";
 import Cookies from "../views/Cookies.vue";
 import About from "../views/About.vue";
 import Cart from "../views/Cart.vue";
+import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: "/cart",
     name: "Cart",
     component: Cart
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login
   }
 ];
 
