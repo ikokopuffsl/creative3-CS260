@@ -1,6 +1,8 @@
 <template>
   <footer>
-    <a href="https://github.com/ikokopuffsl/creative3-CS260">Github</a>
+    <a href="https://github.com/ikokopuffsl/creative3-CS260"
+      >Tyler Brady and Kwan Ko's Project - Github</a
+    >
     <br />
     <span>Do you have any requests or comments for us?</span>
     <input type="text" v-model="msg" id="comments" />
