@@ -1,9 +1,9 @@
 <template>
   <footer>
     <a href="https://github.com/ikokopuffsl/creative3-CS260">Github</a>
-    <br>
+    <br />
     <span>Do you have any requests or comments for us?</span>
-    <input type="text" v-model="msg" id="comments">
+    <input type="text" v-model="msg" id="comments" />
     <button @click="submitRequest()" class="auto">Submit!</button>
   </footer>
 </template>
@@ -13,16 +13,15 @@ export default {
   name: "Footer",
   data() {
     return {
-      msg: 'Your comment here',
-    }
+      msg: "Your comment here"
+    };
   },
-  methods:{
-    submitRequest(){
+  methods: {
+    submitRequest() {
       //To be fleshed out in next lab
-      document.getElementById('comments').value = ''
-      
+      document.getElementById("comments").value = "";
     }
-  },
+  }
 };
 </script>
 
@@ -31,6 +30,6 @@ footer {
   text-align: center;
   margin: 20px;
   font-size: 20px;
-  background: #f2921d;
+  background: #f49f05;
 }
 </style>
