@@ -27,7 +27,6 @@ export default {
 methods: {
     removeFromCart(product) {
       this.$root.$data.cart.splice(this.$root.$data.cart.indexOf(product), 1);
-      var loc = window.location.pathname;
       /*var num = product;
       debugger
       if(num > 1){
