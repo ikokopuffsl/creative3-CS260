@@ -28,7 +28,6 @@ methods: {
     addToCart(product) {  
       if(product.inStock){
         this.$root.$data.cart.push(product);
-        console.log(product.image)
       }
       /*if (!this.$root.$data.cart.has(product)){
         debugger
