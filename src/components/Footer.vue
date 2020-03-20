@@ -18,7 +18,6 @@ export default {
   },
   methods:{
     submitRequest(){
-      debugger
       //To be fleshed out in next lab
       document.getElementById('comments').value = ''
       
